@@ -1,0 +1,38 @@
+name: Generate Contribution Snake
+
+# 生成贡献蛇动画 SVG，并推送到 output 分支
+# Generates the contribution-snake SVG and pushes it to the `output` branch.
+
+on:
+  # 每 12 小时自动刷新 · refresh every 12 hours
+  schedule:
+    - cron: "0 */12 * * *"
+  # 允许在 Actions 页面手动触发 · allow manual run from the Actions tab
+  workflow_dispatch:
+  # 推送到主分支时也刷新 · also refresh on push to the default branch
+  push:
+    branches:
+      - main
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - name: Generate snake SVGs
+        uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+
+      - name: Push to output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
