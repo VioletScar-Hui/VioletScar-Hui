@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="400" height="120">
+  <defs>
+    <linearGradient id="accent5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#F75C7E"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="120" rx="10" fill="#0D1117"/>
+  <rect x="0" y="0" width="4" height="120" rx="2" fill="url(#accent5)"/>
+  <text x="20" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="18" font-weight="600" fill="#8B5CF6">aipm-coach-plugin</text>
+  <text x="20" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" fill="#C9D1D9">AIPM 面试备战 loop 系统，越用越准</text>
+  <text x="20" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#8B949E">Interview-prep loop for AI PMs, with writer-vs-checker QA</text>
+
+  <circle cx="28" cy="104" r="5" fill="#3776AB"/>
+  <text x="40" y="108" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#8B949E">Python · Claude Code plugin</text>
+</svg>

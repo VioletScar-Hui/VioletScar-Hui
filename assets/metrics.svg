@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D1117"/>
+      <stop offset="100%" stop-color="#161B22"/>
+    </linearGradient>
+    <linearGradient id="text" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F75C7E"/>
+      <stop offset="55%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="200" rx="12" fill="url(#bg)"/>
+
+  <text x="400" y="85" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="22" font-weight="600" fill="url(#text)">📊 GitHub Metrics</text>
+  <text x="400" y="125" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" fill="#C9D1D9">首次数据将在 workflow 运行后自动生成 · First run pending</text>
+
+  <rect x="260" y="150" width="280" height="8" rx="4" fill="#21262D"/>
+  <rect x="260" y="150" width="80" height="8" rx="4" fill="url(#text)">
+    <animate attributeName="width" values="80;240;80" dur="2s" repeatCount="indefinite"/>
+  </rect>
+</svg>

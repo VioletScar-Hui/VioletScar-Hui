@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="400" height="120">
+  <defs>
+    <linearGradient id="accent2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="120" rx="10" fill="#0D1117"/>
+  <rect x="0" y="0" width="4" height="120" rx="2" fill="url(#accent2)"/>
+  <text x="20" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="18" font-weight="600" fill="#8B5CF6">Svg-design-system</text>
+  <text x="20" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" fill="#C9D1D9">支持 Codex / Claude Code 的 SVG 可视化系统</text>
+  <text x="20" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#8B949E">SVG dataviz system for Codex &amp; Claude Code</text>
+
+  <circle cx="28" cy="104" r="5" fill="#F7DF1E"/>
+  <text x="40" y="108" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#8B949E">JavaScript · Design tokens</text>
+</svg>
